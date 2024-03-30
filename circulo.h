@@ -1,6 +1,10 @@
-typedef struct Circulo Circulo; 
-/* Cria um circulo com centro (x,y) e raio r */ 
-Circulo circ_cria(float x, float y, float r); 
+typedef struct Circulo Circulo; //define as variaveis para criar o circulo
+/** Cria um circulo com centro (x,y) e raio r 
+ * @param x coordenada x do circulo
+ * @param y coordenada y do circulo
+ * @param r raio do circulo
+ */ 
+Circulo* circ_cria(float x, float y, float r); 
 /* Libera a memoria de um Circulo */ 
 void circ_libera(Circulo *c); 
 /* Calcula a area de um circulo */ 
